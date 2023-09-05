@@ -3,29 +3,18 @@ import React from 'react'
 const Footer = (copyrightText,  upArrowLink,downloadText, downloadLink) => {
     return (
         <>
-            <div className="Footer">
+            <div className="footer">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 col-lg-5 col-12 ft-1">
+                    <div className="first-footer">
+                        <div className="text-content">
                             <h3>DOWNLOAD OUR ANDROID APP</h3>
                             <p>With Cayiba you do not need to have a business to become a trader. All you need is just a smart phone. Call us on +225 05 95 58 83 99 to schedule a short training session of just a few hours and we will show you how to make commissions in sales via your smart phone.</p>
                         </div>
-                        
-                       
-                         {/* <Button variant="light"size="lg">Download on Android</Button>*/}
                          <div class="downloadbutton">
                               <a href="https://play.google.com/store/apps/details?id=com.cla.cayiba&amp;hl=en_IN&amp;gl=US" className="android-button" target="_blank">
                                  <button className="test" type="submit"class=" btn-lg" >Download on Android</button>
                               </a>
                           </div>
-        
-                         {/* <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">With Cayiba you do not need to have a business to become a trader. </font><font style="vertical-align: inherit;">All you need is just a smart phone. </font><font style="vertical-align: inherit;">Call us on +225 05 95 58 83 99 to schedule a short training session of just a few hours and we will show you how to make commissions in sales via your smart phone.
-                            </font></font> */}
-                            {/* <div class="bg-all">
-                                <a href="https://play.google.com/store/apps/details?id=com.cla.cayiba&amp;hl=en_IN&amp;gl=US" target="_blank" class="btn btn-outline-light mt-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Download on Android</font></font></a>
-                            </div> */}
-
-
                          <div class="map-animation-left">
                             <div class="map-marker-block aos-init aos-animate" data-aos="fade-right">
                                 <img src="https://www.cayiba.com/resources/images/bg/3d-map.png" alt="" class="map-bg"/>
@@ -76,11 +65,10 @@ const Footer = (copyrightText,  upArrowLink,downloadText, downloadLink) => {
                                 <img src="https://www.cayiba.com/resources/images/bg/user-hand.png" alt="user phone"/>
                             </div>
                         </div>
-                       {/* </div> */}
                   </div>
               </div>
           </div>
-              <div className='Last-footer'>
+              <div className='last-footer'>
                
                    Cayiba.©2023 All rights reserved.
                           <div className="footer-icons">
