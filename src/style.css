@@ -12,10 +12,70 @@
     background-color:var(--primary-color);
     color:var(--primary-text-color);
 }
+/* Mobile-first styles */
 @media (max-width: 480px) {
-  .button .btn{
-   color:#f60838;   
-  }
+.navbar-brand img {
+  width: 60px; 
+  height: 40px; 
+ } 
+  /* Center-align the Navbar.Brand (logo) */
+.navbar-nav {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin-left: 10%;
+}
+  /* Push the Navbar.Collapse content to the right */
+.navbar-nav {
+  flex-direction: row-reverse;
+}
+/* Style the Sell button */
+.navbar .btn-sell {
+  margin-right: 20px; 
+}
+.mobile-h3 {
+  text-align: left;
+  font-size: 0.6rem;
+}
+.mobile-link-no-underline {
+  text-align:right;
+  font-size: 0.5rem;
+  display: block;
+  margin: 0 auto;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333;
+} 
+}
+/* Add styles for screens larger than 767px */
+@media (min-width: 768px) {
+.navbar-brand img {
+  width: 100px; 
+  height: 50px;
+}
+/* Reset alignment for the Navbar.Brand (logo) */
+.navbar-nav{
+  display: inline-block;
+  margin-left: 20%;
+} 
+  /* Reset Navbar.Collapse flex-direction */
+.navbar-nav {
+  flex-direction: row;
+} */
+  /* Reset styles for the Sell button */
+.navbar .btn-sell {
+  margin-right: 10px; 
+}
+.desktop-h3 {
+  text-align: left;
+  font-size: 1.5rem;
+}
+.desktop-link-no-underline {
+  text-align: left;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #333;
+} 
 }
 .footer {
   padding: 2rem 0;
@@ -54,17 +114,17 @@
 position:absolute;
 right:6%;
 } 
-.slider-text 
+.h3
 {
 display: block;
 text-align: left;
 margin-top: 30px;  
-}
+} 
 /* popular categories styling */
 body {
   background: #ccc;
 }
-.App {
+.app {
   width: 100%;
   margin: 0 auto;
 }
@@ -79,7 +139,7 @@ body {
   background:var(--primary-text-color);
   border-radius: 8px;
   overflow: hidden;
-  height: 600px;
+  height: 400px;
   color: #fff;
   cursor: pointer;
 }
@@ -89,8 +149,9 @@ body {
   object-fit: cover;
   background:var(--primary-text-color);
 }
-.card-bottom {
-  margin: 10px 20px;
+.h4{
+  text-align:center;
+  margin-left: 20px; 
 }  
 .link a {
   text-decoration: none;

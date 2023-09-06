@@ -11,18 +11,20 @@ import Slider from 'react-slick';
 import Footer from './Components/Inc/Footer';
 import PopularCategories from './Components/Inc/PopularCategories';
 import imgGirl from './Components/Images/defaultImage.jpg';
+import SamplePrevArrow from './Components/Pages/SamplePrevArrow';
+import SampleNextArrow from './Components/Pages/SampleNextArrow';
 
 function App() {
   const [defaultImage, setDefaultImage] = useState({});
   const settings = {
     dots: false,
-    // prev arrows:true,
-    // next arrows:true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
+    prevArrow: <SamplePrevArrow />, 
+    nextArrow: <SampleNextArrow />,
     responsive: [
       {
         breakpoint:1024,
@@ -61,33 +63,33 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="app">
       <StickyNavbar />
-      <div className="slider-text">
-          <h3>POPULAR CATEGORIES</h3>
-           {/* <a href="#" class="no-underline">See Everything</a>  */}
+      <div className="app-slider-text">
+         <h3 className={window.innerWidth <= 480 ? 'mobile-h3' : 'desktop-h3'}>
+          POPULAR CATEGORIES
+          </h3>
       </div>
       <div className="link">
-          
-          <a href="#" class="link-no-underline" >See Everything</a>
+          <a href="#" className={window.innerWidth <= 480 ? 'mobile-link-no-underline' : 'desktop-link-no-underline'}>
+             See Everything
+          </a>
       </div> 
       <Slider {...settings}>
         {PopularCategories.map((item) => (
           <div className="card">
             <div className="card-top">
-              <img
-                src={
+               <img
+                 src={
                   defaultImage[item.title] === item.title
                     ? defaultImage.linkDefault
                     : item.linkImg
-                }
-                alt={item.title}
-                onError={handleErrorImage}
-               />
-               
-              <h1>{item.title}</h1>
+                    }
+                    alt={item.title}
+                    onError={handleErrorImage}
+                />
             </div>
-            
+            <h4 className="text-center" >{item.title}</h4>
           </div>
         ))}
 
