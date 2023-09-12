@@ -13,6 +13,10 @@ import PopularCategories from './Components/Inc/PopularCategories';
 import imgGirl from './Components/Images/defaultImage.jpg';
 import SamplePrevArrow from './Components/Pages/SamplePrevArrow';
 import SampleNextArrow from './Components/Pages/SampleNextArrow';
+import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+import LoginPage from './Components/Pages/LoginPage';
+import Register from './Components/Pages/Register';
+import Home from './Components/Pages/Home';
 
 function App() {
   const [defaultImage, setDefaultImage] = useState({});
@@ -63,22 +67,30 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <StickyNavbar />
-      <div className="app-slider-text">
-         <h3 className={window.innerWidth <= 480 ? 'mobile-h3' : 'desktop-h3'}>
-          POPULAR CATEGORIES
-          </h3>
-      </div>
-      <div className="link">
-          <a href="#" className={window.innerWidth <= 480 ? 'mobile-link-no-underline' : 'desktop-link-no-underline'}>
+   <Router>
+     <div className="app">
+        <StickyNavbar />
+        {/* <Home/> */}
+        <Routes>
+          <Route path="/login" element={<LoginPage/>}></Route> 
+          <Route path="/Register" element={<Register/>}></Route> 
+          <Route path="/Home" element={<Home/>}></Route>
+
+        </Routes>
+            <div className="app-slider-text">
+            <h3 className={window.innerWidth <= 480 ? 'mobile-h3' : 'desktop-h3'}>
+               POPULAR CATEGORIES
+            </h3>
+        </div>
+        <div className="link">
+           <a href="#" className={window.innerWidth <= 480 ? 'mobile-link-no-underline' : 'desktop-link-no-underline'}>
              See Everything
-          </a>
-      </div> 
-      <Slider {...settings}>
-        {PopularCategories.map((item) => (
-          <div className="card">
-            <div className="card-top">
+           </a>
+        </div> 
+       <Slider {...settings}>
+          {PopularCategories.map((item) => (
+            <div className="card">
+              <div className="card-top">
                <img
                  src={
                   defaultImage[item.title] === item.title
@@ -88,17 +100,16 @@ function App() {
                     alt={item.title}
                     onError={handleErrorImage}
                 />
-            </div>
-            <h4 className="text-center" >{item.title}</h4>
+             </div>
+              <h4 className="text-center" >{item.title}</h4>
           </div>
-        ))}
-
-      </Slider>
-      <Footer/>
-    </div>
+         ))}
+       </Slider>
+        {/* <Footer/> */}
+     </div>
+   </Router> 
   );
 }
-
 export default App;
 
 

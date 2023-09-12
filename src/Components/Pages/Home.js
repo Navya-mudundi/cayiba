@@ -1,12 +1,13 @@
-import React from 'react';
-import Bannerslider from '../Inc/Bannerslider';
+import React from "react";
+import StickyNavbar from "../Inc/StickyNavbar";
+import Footer from "../Inc/Footer";
 
 function Home() {
   return (
-    // <div>
-        <Bannerslider/>
-    /* </div> */
+    <div>
+      <StickyNavbar />
+      <Footer />
+    </div>
   );
-};
-
+}
 export default Home;
