@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
+import "../Pages/LoginPage.css";
 
 const LoginPage = () => {
   // State to store form field values
@@ -7,13 +8,11 @@ const LoginPage = () => {
     mobile: "",
     password: "",
   });
-
   // State to store form validation errors
   const [errors, setErrors] = useState({
     mobile: "",
     password: "",
   });
-
   // Handle form field changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -21,56 +20,39 @@ const LoginPage = () => {
       ...formData,
       [name]: value,
     });
-
     // Reset validation error for the field
     setErrors({
       ...errors,
       [name]: "",
     });
   };
-
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-
     // Perform validation
     let valid = true;
     const newErrors = { ...errors };
-
     if (!formData.mobile || !/^\d{10}$/.test(formData.mobile)) {
       valid = false;
       newErrors.mobile = "Mobile number must be 10 digits.";
     }
-
     if (!formData.password || formData.password.length < 7) {
       valid = false;
       newErrors.password = "Password must be at least 7 characters long.";
     }
-
     // If any validation errors, update state and stop submission
     if (!valid) {
       setErrors(newErrors);
       return;
     }
   };
-
   return (
     <Container className="mt-5">
       <div>
         <h2 style={{ color: "black", display: "inline", position: "relative" }}>
-          <span>Login</span>
-          <span
-            style={{
-              content: "",
-              position: "absolute",
-              bottom: "-2px",
-              left: "-10px",
-              right: "-900px",
-              height: "2px",
-              background: "linear-gradient(to right, #f8ebb6 5%, black 90%)",
-            }}
-          ></span>
+          Login
         </h2>
+        <hr className="line" />
       </div>
       <br />
       <Form onSubmit={handleSubmit}>
@@ -83,11 +65,9 @@ const LoginPage = () => {
             value={formData.mobile}
             onChange={handleInputChange}
             required
-            style={{ maxWidth: "400px" }}
-          />
-          {errors.mobile && <div className="text-danger">{errors.mobile}</div>}
+            style={{ maxWidth: "400px" }}/>
+           {errors.mobile && <div className="text-danger">{errors.mobile}</div>}
         </Form.Group>
-
         <Form.Group controlId="password">
           <Form.Label>Password</Form.Label>
           <Form.Control
@@ -97,14 +77,13 @@ const LoginPage = () => {
             value={formData.password}
             onChange={handleInputChange}
             required
-            style={{ maxWidth: "400px" }}
-          />
+            style={{ maxWidth: "400px" }}/>
           {errors.password && (
             <div className="text-danger">{errors.password}</div>
           )}
         </Form.Group>
         <br />
-        <Button variant="danger" type="submit" block>
+        <Button variant="warning custom-button" size="lg" type="submit" block>
           Login
         </Button>
       </Form>
@@ -116,5 +95,4 @@ const LoginPage = () => {
     </Container>
   );
 };
-
 export default LoginPage;

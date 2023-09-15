@@ -9,6 +9,8 @@ import {
   Carousel,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./SearchBar.css";
+import "../Inc/StickyNavbar.css";
 
 const StickyNavbar = () => {
   return (
@@ -26,36 +28,52 @@ const StickyNavbar = () => {
           className="d-inline-block align-top"
           alt="Logo"
         />
-        <Button variant="danger" className="d-sm-none ">
+        <Button variant="warning" className="d-sm-none ">
           Sell
         </Button>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbar-nav" />
       <Navbar.Collapse id="navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link as={Link} to="/home">
+            Home
+          </Nav.Link>
           <NavDropdown title="Categories" id="categories-dropdown">
             <NavDropdown.Item href="#action/3.1">Category 1</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Category 2</NavDropdown.Item>
           </NavDropdown>
         </Nav>
         <Form inline className="d-none d-lg-flex">
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <FormControl
+            type="text"
+            placeholder="Search"
+            className="mr-sm-2 custom-search-bar"
+          />
+          <span className="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
         </Form>
+
         <Form inline className="d-flex d-lg-none">
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <FormControl
+            type="text"
+            placeholder="Search"
+            className="mr-sm-2 custom-search-bar"
+          />
+          <div className="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
         </Form>
+
         <Nav>
-          {/* <Nav.Link href="#Login">Login</Nav.Link>  */}
           <Nav.Link as={Link} to="/login">
             Login
           </Nav.Link>
         </Nav>
-        <Button variant="danger" className="d-none d-md-block">
+
+        <Button variant="warning" size="lg" className="d-none d-md-block ">
           Sell
         </Button>
-
-        <Nav></Nav>
       </Navbar.Collapse>
     </Navbar>
   );

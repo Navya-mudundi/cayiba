@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@200&family=Montserrat:wght@100;300&family=Roboto:wght@100&display=swap");
+
+:root {
+  --primary-color: #f8ebb6;
+  --secondary-color: #ffffff;
+  --neutral-color: #111111;
+
+  --primary-text-color-600: #111111;
+  --primary-text-color-400: #444444;
+  --secondary-text-color: #f60838;
+  --secondary-text-color-200: #666666;
+  --neutral-text-color: #ffffff;
+
+  --ff-primary: Montserrat, sans-serif;
+  --ff-secondary: Asap, sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-secondary);
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+
+  --fs-400: 1 rem;
+  --fs-600: 1.625rem;
+  --fs-body: var(--fs-600);
+  --fs-nav: var(--fs-400);
+  --fs-primary-heading: var(--fs-400);
+  --fs-secondary-body: var(--fs-600);
+}
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color-400);
+}
+@media (max-width: 320) {
+  :root {
+    --fs-400: 0.875rem;
+    --fs-600: 0.937rem;
+    --fs-body: var(--fs-600);
+    --fs-nav: var(--fs-400);
+    --fs-primary-heading: var(--fs-400);
+    --fs-secondary-heading: var(--fs-600);
+  }
+  .navbar-brand img {
+    width: 60px;
+    height: 40px;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+  }
+  .navbar-nav {
+    flex-direction: row-reverse;
+  }
+  .navbar .btn-sell {
+    margin-right: 20px;
+  }
+
+  /* button.variant-warning:hover {
+ background-color: var(--secondary-text-color); 
+ color:var(--primary-text-color-600);
+} */
+}
+/* Add styles for screens larger than 767px */
+@media (min-width: 768) {
+  .navbar-brand img {
+    width: 100px;
+    height: 50px;
+  }
+  .navbar-nav {
+    display: inline-block;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar .btn-sell {
+    margin-right: 10px;
+  }
+  .custom-sell-button {
+    margin-right: 50px;
+    padding-left: 30%;
+  }
+}

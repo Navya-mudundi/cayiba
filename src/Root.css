@@ -1,0 +1,78 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Roboto:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Asap:wght@200&family=Montserrat:wght@100;300&family=Roboto:wght@100&display=swap');
+
+:root {
+  --primary-color:#f8ebb6; 
+  --secondary-color: #ffffff; 
+  --neutral-color:#111111;
+
+  --primary-text-color-600:#111111; 
+  --primary-text-color-400:#444444;
+  --secondary-text-color: #f60838 ;
+  --secondary-text-color-200:#666666;
+  --neutral-text-color: #ffffff;
+
+  --ff-primary: Montserrat, sans-serif;
+  --ff-secondary:Asap,sans-serif;
+
+  --ff-body:var(--ff-primary);
+  --ff-heading:var(--ff-secondary);
+
+  --fw-regular:400;
+  --fw-bold:600;
+
+  --fs-400:1 rem;
+  --fs-600:1.625rem;
+  --fs-body:var(--fs-600);
+  --fs-nav:var(--fs-400); 
+  --fs-primary-heading:var(--fs-400);
+  --fs-secondary-body:var(--fs-600); 
+
+}
+
+
+/* .footer {
+  padding: 2rem 0;
+  margin-top:15rem;
+  color:var(--neutral-text-color);
+  background-color:var(--primary-color); 
+} 
+.footer-icons i {
+  padding: 0.4rem 0.5rem;
+  color:var(--secondary-text-color);
+  margin: 0 0.5rem;
+  border-radius: 50%;
+}
+.footer-icons i:hover {
+  color:var(--neutral-text-color);
+  transition: 0.6s;
+  cursor: pointer;
+}
+.first-footer{
+  color:var(--secondary-text-color);
+}
+.footer-icons{
+  text-align: right; 
+}
+.last-footer {
+  background:var(--neutral-color);
+  color:var(--neutral-text-color);
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.last-footer .up-arrow{
+position:absolute;
+right:6%;
+}  */
+
+/* //footer styling */
+/* section.d-map {
+  padding: 6rem 0;
+  background:var(--secondary-text-color);
+} */
+
+
+

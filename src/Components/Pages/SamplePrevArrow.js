@@ -1,4 +1,5 @@
 import React from "react";
+import "./SamplePrevArrow.css";
 
 const SamplePrevArrow = (props) => {
   const { className, style, onClick } = props;
