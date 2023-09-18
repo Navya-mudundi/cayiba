@@ -31,3 +31,5 @@ const SamplePrevArrow = (props) => {
 };
 
 export default SamplePrevArrow;
+
+

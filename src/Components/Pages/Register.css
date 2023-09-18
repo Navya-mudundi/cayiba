@@ -1,32 +1,35 @@
-.Register-line {
+.register-line-line {
   width: 40%;
   height: 80%;
   border-top: 4px solid rgb(255, 204, 0);
   text-decoration: none;
 }
-.Register-line::before,
-.Register-line::after {
+.register-line-line::before,
+.register-line-line::after {
   content: "";
   position: absolute;
   width: 60%;
 }
-.Register-line::before {
+.register-line-line::before {
   left: -10;
   border-top: 1px solid black;
 }
-.Register-line::after {
+.register-line-line::after {
   right: 0;
 }
 @media screen and (max-width: 480px) {
-  .Register-line {
+  .register-line {
     width: 40%;
     height: 80%;
     border-top: 4px solid rgb(255, 204, 0);
     text-decoration: none;
   }
-  .custom-button-Register {
+  .custom-button-Register{
     color: black;
     border-radius: 18px;
+  }
+  .custom-button-Register:hover{
+    background-color: grey;
   }
 }
 @media screen and (min-width: 768px) {
@@ -35,6 +38,9 @@
     border-radius: 18px;
     padding: 15px;
     width: 150px;
+  }
+  .custom-button-Register:hover{
+    background-color: grey;
   }
 } 
 

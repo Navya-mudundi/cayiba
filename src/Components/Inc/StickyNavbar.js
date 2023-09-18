@@ -20,6 +20,7 @@ const StickyNavbar = () => {
       expand="lg"
       className="justify-content-between align-items-center"
     >
+      
       <Navbar.Brand href="#home">
         <img
           src="https://www.cayiba.com/resources/images/cayiba_logo2.png"
@@ -28,10 +29,15 @@ const StickyNavbar = () => {
           className="d-inline-block align-top"
           alt="Logo"
         />
-        <Button variant="warning" className="d-sm-none ">
-          Sell
-        </Button>
-      </Navbar.Brand>
+        </Navbar.Brand>
+        <Nav className="d-flex flex-row-reverse flex-lg-row">
+          <Nav.Link as={Link} to="/Sell">
+            <Button variant="warning" className="d-sm-none ">
+              Sell
+            </Button>
+          </Nav.Link>
+        </Nav>
+      {/* </Navbar.Brand> */}
       <Navbar.Toggle aria-controls="navbar-nav" />
       <Navbar.Collapse id="navbar-nav">
         <Nav className="ml-auto">
@@ -70,10 +76,13 @@ const StickyNavbar = () => {
             Login
           </Nav.Link>
         </Nav>
-
-        <Button variant="warning" size="lg" className="d-none d-md-block ">
-          Sell
-        </Button>
+        <Nav>
+          <Nav.Link as={Link} to="/Sell">
+            <Button variant="warning" size="lg" className="d-none d-md-block ">
+              Sell
+            </Button>
+          </Nav.Link>
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   );

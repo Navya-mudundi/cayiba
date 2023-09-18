@@ -3,12 +3,14 @@ import StickyNavbar from "../Inc/StickyNavbar";
 import Footer from "../Inc/Footer";
 import Arrows from "./Arrows";
 
+
 function Home() {
   return (
     <div>
       <StickyNavbar />
-      <Arrows/>
+      <Arrows/> 
       {/* <Footer/> */}
+      
     </div>
   );
 }

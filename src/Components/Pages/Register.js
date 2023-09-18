@@ -79,12 +79,10 @@ const RegisterPage = () => {
           color: "black",
           display: "inline",
           position: "relative",
-        }}
-      >
+        }}>
         Register
       </h2>
-      <hr classname="Register-line" />
-
+      <hr classname="register-line" />
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="employeeReference">
           <Form.Label>Employee Reference</Form.Label>

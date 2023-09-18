@@ -4,7 +4,7 @@ import SampleNextArrow from "./SampleNextArrow";
 import PopularCategories from "./PopularCategories";
 import imgGirl from "./defaultImage.jpg";
 import Slider from "react-slick";
-import "./Arrows.css";
+import "../Pages/Arrows.css";
 
 function Arrows() {
   const [defaultImage, setDefaultImage] = useState({});
@@ -16,13 +16,13 @@ function Arrows() {
     slidesToScroll: 3,
     initialSlide: 0,
     arrows: true,
-    // prevArrow: <SamplePrevArrow />,
-    // nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow />,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2,
           infinite: true,
           Arrows: true,

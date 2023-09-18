@@ -1,0 +1,41 @@
+.line {
+    width: 10%;
+    height: 80%;
+    border-top: 4px solid rgb(255, 204, 0);
+    text-decoration: none;
+  }
+  .line::before,
+  .line::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+  }
+  .line::before {
+    left: -10;
+    border-top: 1px solid black;
+  }
+  .line::after {
+    right: 0;
+  }
+  @media screen and (max-width: 480px) {
+    .custom-button {
+      color: black;
+      border-radius: 18px;
+    }
+    .custom-button:hover{
+      background-color: grey;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .custom-button {
+      color: black;
+      border-radius: 18px;
+      padding: 15px;
+      width: 150px;
+    }
+    .custom-button:hover{
+      background-color: grey;
+    }
+  }
+  

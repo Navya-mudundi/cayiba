@@ -29,10 +29,10 @@
   --fs-secondary-body: var(--fs-600);
 }
 .navbar {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   color: var(--primary-text-color-400);
 }
-@media (max-width: 320) {
+@media (max-width:480) {
   :root {
     --fs-400: 0.875rem;
     --fs-600: 0.937rem;
@@ -58,10 +58,7 @@
     margin-right: 20px;
   }
 
-  /* button.variant-warning:hover {
- background-color: var(--secondary-text-color); 
- color:var(--primary-text-color-600);
-} */
+
 }
 /* Add styles for screens larger than 767px */
 @media (min-width: 768) {
