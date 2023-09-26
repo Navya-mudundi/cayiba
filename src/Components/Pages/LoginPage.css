@@ -1,7 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@200&family=Montserrat:wght@100;300&family=Roboto:wght@100&display=swap");
+
+:root {
+  --primary-color:rgb(255, 204, 0);
+  --secondary-color: #ffffff;
+  --neutral-color: #111111;
+  --hover-color:grey;
+
+  --primary-text-color-600: #111111;
+  --primary-text-color-400: #444444;
+  --secondary-text-color: #f60838;
+  --secondary-text-color-200: #666666;
+  --neutral-text-color: #ffffff;
+
+  --ff-primary: Montserrat, sans-serif;
+  --ff-secondary: Asap, sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-secondary);
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+
+  --fs-400: 1rem;
+  --fs-600: 1.625rem;
+  --fs-body: var(--fs-600);
+  --fs-nav: var(--fs-400);
+  --fs-primary-heading: var(--fs-400);
+  --fs-secondary-body: var(--fs-600);
+}
 .line {
   width: 10%;
   height: 80%;
-  border-top: 4px solid rgb(255, 204, 0);
+  border-top: 4px solid var(--primary-color);
   text-decoration: none;
 }
 .line::before,
@@ -12,29 +43,29 @@
 }
 .line::before {
   left: -10;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--neutral-color);
 }
 .line::after {
   right: 0;
 }
 @media screen and (max-width: 480px) {
   .custom-button {
-    color: black;
+    color:var(--neutral-color);
     border-radius: 18px;
   }
   .custom-button:hover{
-    background-color: grey;
+    background-color:var(--hover-color);
   }
 }
 
 @media screen and (min-width: 768px) {
   .custom-button {
-    color: black;
+    color:var(--neutral-color);
     border-radius: 18px;
     padding: 15px;
     width: 150px;
   }
   .custom-button:hover{
-    background-color: grey;
+    background-color: var(--hover-color);
   }
 }

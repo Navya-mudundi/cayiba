@@ -1,20 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@200&family=Montserrat:wght@100;300&family=Roboto:wght@100&display=swap");
+
+:root {
+  --primary-color:rgb(255, 204, 0);
+  --secondary-color: #ffffff;
+  --neutral-color: #111111;
+
+  --primary-text-color-600: #111111;
+  --primary-text-color-400: #444444;
+  --secondary-text-color: #f60838;
+  --secondary-text-color-200: #666666;
+  --neutral-text-color: #ffffff;
+
+  --ff-primary: Montserrat, sans-serif;
+  --ff-secondary: Asap, sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-secondary);
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+
+  --fs-400: 1 rem;
+  --fs-600: 1.625rem;
+  --fs-body: var(--fs-600);
+  --fs-nav: var(--fs-400);
+  --fs-primary-heading: var(--fs-400);
+  --fs-secondary-body: var(--fs-600);
+}
+
 .search-icon {
   width: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  background-color: rgb(255, 204, 0);
+  background-color:var(--primary-color);
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
-  border: 2px solid rgb(255, 204, 0);
+  border: 2px solid var(--primary-color);
 }
 .custom-search-bar {
   width: 500px;
   border-radius: 0px;
   border-top-left-radius: 18px;
   border-bottom-left-radius: 18px;
-  border-color: rgb(255, 204, 0);
+  border-color:var(--primary-color);
 }
 
 @media screen and (max-width: 480px) {
@@ -24,17 +55,17 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    background-color: rgb(255, 204, 0);
+    background-color:var(--primary-color);
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
-    border: 2px solid rgb(255, 204, 0);
+    border: 2px solid var(--primary-color);
   }
   .custom-search-bar {
     width: 250px;
     border-radius: 0px;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
-    border-color: rgb(255, 204, 0);
+    border-color:var(--primary-color);
   }
 }
 @media screen and (min-width: 768px) {
@@ -44,16 +75,16 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    background-color: rgb(255, 204, 0);
+    background-color:var(--primary-color);
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
-    border: 2px solid rgb(255, 204, 0);
+    border: 2px solid var(--primary-color);
   }
   .custom-search-bar {
     width: 500px;
     border-radius: 0px;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
-    border-color: rgb(255, 204, 0);
+    border-color:var(--primary-color);
   }
 }

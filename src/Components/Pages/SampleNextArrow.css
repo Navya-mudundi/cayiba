@@ -1,9 +1,9 @@
 .className {
   display: "block";
-  background: "green";
+  /* background: "green"; */
   width: "4vw";
   height: "4vw";
-  background: "#333";
+  /* background: "#333"; */
   border-radius: "50%";
   display: "flex";
   justify-content: "center";
