@@ -1,16 +1,22 @@
 import React from "react";
 import StickyNavbar from "../Inc/StickyNavbar";
-import Footer from "../Inc/Footer";
+// import Footer from "../Inc/Footer";
 import Arrows from "./Arrows";
+// import Bannerslider from '../Pages/Bannerslider';
+// import Productcard from '../Product/Productcard';
 
 
 function Home() {
   return (
     <div>
       <StickyNavbar />
-      <Arrows/> 
-      {/* <Footer/> */}
-      
+      {/* <Bannerslider /> */}
+      <Arrows/>
+      {/* <Productcard/> 
+      <Productcard/> 
+      <Productcard/> 
+      <Productcard/>  */}
+      {/* <Footer/> */} 
     </div>
   );
 }

@@ -1,12 +1,13 @@
 import React from "react";
 import StickyNavbar from "./StickyNavbar";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
-const Layout = ({ children }) => {
+
+const Layout = ({children}) => {
   return (
     <div className="app">
-      <StickyNavbar />
-      {children}
+      <StickyNavbar /> 
+      {children} 
       {/* <Footer /> */}
     </div>
   );

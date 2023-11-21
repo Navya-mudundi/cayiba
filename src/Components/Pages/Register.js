@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Form, Button, Col, Row } from "react-bootstrap";
+import { Container, Form, Button } from "react-bootstrap";
 import "../Pages/Register.css";
 
 const RegisterPage = () => {
