@@ -44,15 +44,15 @@ const StickyNavbar = () => {
           <Nav.Link as={Link} to="/home">
             Home
           </Nav.Link>
-            <NavDropdown title="Categories" id="categories-dropdown">
+            {/* <NavDropdown title="Categories" id="categories-dropdown">
             <NavDropdown.Item href="#action/3.1">Category 1</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Category 2</NavDropdown.Item>
-          </NavDropdown>  
-           {/* <Nav>
-          <Nav.Link as={Link} to="/categories">
+          </NavDropdown>   */}
+           <Nav>
+          <Nav.Link as={Link} to="/bannerslider">
             categories
-          </Nav.Link> */}
-        {/* </Nav>  */}
+          </Nav.Link> 
+         </Nav>  
         </Nav>
         <Form inline className="d-none d-lg-flex">
           <FormControl

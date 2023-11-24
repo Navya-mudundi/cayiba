@@ -1,83 +1,165 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Slider from 'react-slick';
+// import '../Inc/Bannerslider.css';
 import '../Pages/ProductDetails.css';
 
 const ProductDetails = () => {
-  const [selectedImage, setSelectedImage] = useState(0);
-  const [selectedSize, setSelectedSize] = useState(null);
-
-  const product = {
-    title: 'Sample Product',
-    sizes: ['Small', 'Medium', 'Large'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    price: 19.99,
-  };
-
-  const images = [
-    'https://www.cayiba.com/uploads/listings/ea46d9cd43df23752d0b048dc3fc1cb0.png',
-    'https://www.cayiba.com/uploads/listings/12c29c768be874a31401a3a5f1fc13d0.png',
-    'https://www.cayiba.com/uploads/listings/ea46d9cd43df23752d0b048dc3fc1cb0.png',
+  const data = [
+    {
+      id: 1,
+      image: "https://www.cayiba.com/uploads/listings/8ab56e736bc438aa950714d34cf4cb48.png",
+    },
+    {
+      id: 2,
+      image: "https://www.cayiba.com/uploads/listings/b01abb2eac74e38f475ba2af9490ed6f.png",
+      title: ''
+    },
+    {
+      id: 3,
+      image: "https://www.cayiba.com/uploads/listings/5cb15c5c0e9c0af2783f4e2ac1e85938.png",
+      title: ''
+    },
+    {
+      id: 4,
+      image: "https://www.cayiba.com/uploads/listings/b01abb2eac74e38f475ba2af9490ed6f.png",
+      title: ''
+    },
+    {
+      id: 5,
+      image: "https://www.cayiba.com/uploads/listings/5cb15c5c0e9c0af2783f4e2ac1e85938.png",
+      title: ''
+    },
+    {
+      id: 6,
+      image: "https://www.cayiba.com/uploads/listings/b01abb2eac74e38f475ba2af9490ed6f.png",
+    },
+    {
+      id: 7,
+      image: "https://www.cayiba.com/uploads/listings/5cb15c5c0e9c0af2783f4e2ac1e85938.png",
+    },
+    {
+      id: 8,
+      image: "https://www.cayiba.com/uploads/listings/b01abb2eac74e38f475ba2af9490ed6f.png",
+    },
+    {
+      id: 9,
+      image: "https://www.cayiba.com/uploads/listings/5cb15c5c0e9c0af2783f4e2ac1e85938.png",
+    }
   ];
 
-  const handleImageClick = (index) => {
-    setSelectedImage(index);
-  };
-
-  const handlePrevImage = () => {
-    setSelectedImage((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-  };
-
-  const handleNextImage = () => {
-    setSelectedImage((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-  };
-
-  const handleSizeSelect = (size) => {
-    setSelectedSize(size);
+  const settings = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="product-details-container">
-      <div className="product-images-container">
-        <div className="main-image">
-          <img src={images[selectedImage]} alt="Main" />
-          <button className="arrow-btn left" onClick={handlePrevImage}>
-            &lt;
-          </button>
-          <button className="arrow-btn right" onClick={handleNextImage}>
-            &gt;
-          </button>
-        </div>
-        <div className="thumbnail-images">
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Thumbnail ${index + 1}`}
-              onClick={() => handleImageClick(index)}
-              className={index === selectedImage ? 'selected' : ''}
-            />
+    <div>
+      <div className='bannerslider'>
+        <Slider className='bannerslider' {...settings}>
+          {data.map((item) => (
+            <div className='imgcontainer' key={item.id}>
+              <img src={item.image} width='100%' height='100%' alt='noimg' />
+            </div>
           ))}
-        </div>
+        </Slider>
       </div>
-      <div className="product-info-container">
-        <h1>{product.title}</h1>
-        <p>{product.description}</p>
-        <p>Available Sizes:</p>
-        <div className="size-options">
-          {product.sizes.map((size, index) => (
-            <span
-              key={index}
-              onClick={() => handleSizeSelect(size)}
-              className={size === selectedSize ? 'selected' : ''}
-            >
-              {size}
-            </span>
-          ))}
+
+      <div className="content-container">
+        <div className="left-side">
+          <div className="horizontal-div1">
+            <h3>All Night Drugstore</h3>
+            <div className="icon">
+              <i className="fas fa-map-marker-alt"></i></div>
+              <span style={{ margintop: "10px"}}>Italian</span>
+           </div>
+
+          <div className="horizontal-div2">
+          <h4 className="underline pink">Preview</h4>
+          <span>Loincloth</span>
+          </div>
+
+          <div className="horizontal-div map">
+          <p className="underline pink">Map </p>
+          </div>
         </div>
-        <p>
-          Quantity: <input type="number" min="1" defaultValue="1" />
-        </p>
-        <p>Price: ${product.price}</p>
-        <button className="add-to-cart-btn">Add to Cart</button>
+
+        <div className="right-side">
+          <div className="vertical-div">
+            <div className="icon">
+             <i className="fas fa-user"></i></div> 
+                <h3 className="underline grey">Seller Information</h3> 
+                
+            <span >Italian</span>
+            <ul>
+              <li>
+                <div className="icon">
+                  <i className="fas fa-map-marker-alt"></i>
+                <span>CFA 8000</span></div>
+              </li>
+              <li>
+                <div className="icon">
+                  <i className="fas fa-map-marker-alt"></i>
+                  <span>Condition New</span></div>
+              </li>
+              <li>
+                <div className="icon">
+                  <i className="fas fa-map-marker-alt"></i>
+                  <span>Location Abengourou,Italian Loincloth</span></div>
+              </li>
+              <li>
+                <div className="icon">
+                  <i className="fas fa-map-marker-alt"></i>
+                  <span>Published:oct 19,2022</span> </div>
+              </li>
+              <li>
+                <div className="icon">
+                  <i className="fas fa-map-marker-alt"></i>
+                  <span>alasanemare</span> </div>
+              </li>
+              <li>
+                <div className="icon">
+                  <i className="fas fa-phone"></i>
+                  <span>0554886830</span></div>
+              </li>
+              <li>
+                <div className="icon">
+                  <i className="fas fa-envelope"></i>
+                  <span>angelsalva202@gmail.com</span> </div>
+              </li>
+              </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

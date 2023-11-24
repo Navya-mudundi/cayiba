@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+@media screen and (min-width:1023px) and (max-width:2600px) {
+
+  /* Shop Sidebar Styles */
+  .shop-sidebar {
+    font-size: 18px;
+    line-height: 18.2px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 445px;
+    width: 270px;
+    background-color: #FFFFFF;
+    padding: 17px 0 9px 0;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    display: block;
+    float: left;
+  }
+
+  /* Category Box Styles */
+  .category-box {
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dddddd;
+    width: 266px;
+    height: 35.79px;
+    margin: 0 0 8px 0;
+  }
+
+  .category-box a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    padding: 0px 22px 15px 25px;
+  }
+
+  /* Subcategory Styles */
+  .sub-categories {
+    height: 372.062px;
+    width: 266px;
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0 0 8px 0;
+    position: relative;
+  }
+
+  .sub-categories li {
+    font-size: 14px;
+    line-height: 18.2px;
+    text-align: left;
+    word-spacing: 0px;
+    height: 33.1875px;
+    width: 226px;
+    margin: 10px 20px 0 10px;
+    border-bottom: 1px solid #dddddd;
+    display: list-item;
+  }
+
+  .sub-categories a:hover {
+    text-decoration: none;
+    color: #555;
+    margin: 10px 20px 0 -9px;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+    display: inline;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-sidebar {
+    display: none;
+    /* Adjust the width as needed for smaller screens */
+    /* Adjust the margin for smaller screens */
+  }
+}
+
+/* @media screen and (max-width:768px) {
+  
+} */

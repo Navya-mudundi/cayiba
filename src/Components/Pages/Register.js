@@ -21,7 +21,14 @@ const RegisterPage = () => {
     password: "",
     confirmPassword: "",
   });
+  const [registrationSuccess, setRegistrationSuccess] = useState(null);
   const employeeReferenceOptions = ["Option 1", "Option 2", "Option 3"];
+  const captureFormData = () => {
+    console.log("Form Data:", formData);
+    setTimeout(() => {
+      setRegistrationSuccess(true);
+    }, 2000);
+  };  
   // Handle form field changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -67,8 +74,10 @@ const RegisterPage = () => {
     }
     if (!valid) {
       setErrors(newErrors);
+      setRegistrationSuccess(false)
       return;
     }
+    captureFormData();
   };
   return (
     <Container className="mt-5">
@@ -191,6 +200,12 @@ const RegisterPage = () => {
       </div>
       {/* </Col>
       </Row> */}
+       {registrationSuccess === true && (
+        <div className="text-success mt-3">Registration successful!</div>
+      )}
+      {registrationSuccess === false && (
+        <div className="text-danger mt-3">Registration failed. Please try again.</div>
+      )}
     </Container>
   );
 };

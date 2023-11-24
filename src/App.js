@@ -15,7 +15,9 @@ import Layout from "./Components/Inc/Layout";
 import SellPage from "./Components/Pages/SellPage";
 import ProductDetails from "./Components/Pages/ProductDetails";
 import './Components/Pages/Arrows.css';
-// import  categories from '../src/Components/Pages/categories';
+import Bannerslider from "./Components/Inc/Bannerslider";
+// import categories from "./Components/Pages/categories";
+import multipleimages from './Components/Pages/multipleimages'
 
 function App() {
   return (
@@ -26,10 +28,12 @@ function App() {
            <Route path="/login" element={<Layout><LoginPage /></Layout>}></Route>
            <Route path="/Register" element={<Layout><Register /></Layout>}></Route>
            <Route path="/sell" element={<Layout><SellPage /></Layout>}></Route>
-           <Route path="/home" element={<Home />}></Route> 
-           {/* <Route Path="/categories" element={<categories />}></Route>   */}
+           {/* <Route path="/home" element={<Home />}></Route>
+           <Route path="/" element={<Layout><Bannerslider /></Layout>} /> */}
+               
         </Routes>
-           <ProductDetails/>  
+            <ProductDetails/>     
+           
       </div>
     </Router>
   );
