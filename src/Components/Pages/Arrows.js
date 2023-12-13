@@ -62,7 +62,7 @@ function Arrows() {
       </div>
       <div className="link">
         <a
-          href="#"
+          href="http://localhost:3000/category_1"
           className={
             window.innerWidth <= 480
               ? "mobile-link-no-underline"

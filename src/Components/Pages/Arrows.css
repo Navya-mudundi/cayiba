@@ -48,16 +48,18 @@
   .mobile-h3 {
     text-align: left;
     font-size:var(--fs-mobile-600);
-    margin-top: auto;
+    margin-top: 40px;
+    color:var(--primary-text-color-600);
   }
   .mobile-link-no-underline {
     text-align: right;
     font-size:var(--fs-mobile-400);
     display: block;
-    margin: 0 auto;
-    padding: 8px 16px;
+    /* margin: 0 auto; */
+    /* margin-top: 40px; */
+    padding: 8px 10px;
     text-decoration: none;
-    color: var(--primary-text-color-400);
+    color: var(--primary-text-color-400); 
   }
 }
 
@@ -65,14 +67,14 @@
   .desktop-h3 {
     text-align: left;
     font-size: 1.5rem;
-    margin-top: auto;
+    margin-top: 40px;
+    color:var(--primary-text-color-600);
   }
   .desktop-link-no-underline {
     text-align: left;
     font-size: 0.8rem;
-
     text-decoration: none;
-    color: var(--primary-text-color-200);
+    color: var(--primary-text-color-400);
   }
 }
 .h3 {
@@ -119,7 +121,7 @@ body {
   margin-bottom: 35px;
   text-align: right;
   display: block;
-  color: var(--primary-text-color);
+  color: var(--primary-text-color-600);
 }
 .link:hover a {
   color: var(--secondary-text-color);

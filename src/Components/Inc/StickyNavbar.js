@@ -6,7 +6,7 @@ import {
   Form,
   FormControl,
   Button,
-  Carousel,
+  // Carousel,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./SearchBar.css";
@@ -44,14 +44,17 @@ const StickyNavbar = () => {
           <Nav.Link as={Link} to="/home">
             Home
           </Nav.Link>
-            {/* <NavDropdown title="Categories" id="categories-dropdown">
-            <NavDropdown.Item href="#action/3.1">Category 1</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Category 2</NavDropdown.Item>
-          </NavDropdown>   */}
+             <NavDropdown title="Categories" id="categories-dropdown">
+            {/* <NavDropdown.Item href="#action/3.1">Category 1</NavDropdown.Item> */}
+             <NavDropdown.Item as={Link} to="/category_1">
+              Category_1
+             </NavDropdown.Item>
+             <NavDropdown.Item href="#action/3.2">Category_2</NavDropdown.Item>
+          </NavDropdown>    
            <Nav>
-          <Nav.Link as={Link} to="/bannerslider">
-            categories
-          </Nav.Link> 
+          {/* <Nav.Link as={Link} to="/category">
+            category 
+          </Nav.Link>  */}
          </Nav>  
         </Nav>
         <Form inline className="d-none d-lg-flex">

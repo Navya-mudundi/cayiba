@@ -1,9 +1,9 @@
-.content-container {
+content-container {
   display: flex;
 } 
 /* Slick arrow styles */
 .slick-arrow {
-  color: #000;
+  color:var(--neutral-color);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -32,12 +32,12 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #000;
-  border: 2px solid #000;
+  background-color:var(--neutral-color);
+  border: 2px solid var(--neutral-color);
 }
 
 .slick-dots li.slick-active button {
-  background-color: #fff;
+  background-color:var(--secondary-color);
 }
 
 /* Content container styles */
@@ -51,20 +51,18 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  
 }
 .horizontal-div1 {
-  /* display: flex; */
-  /* align-items: center; */
   margin-bottom: 10%;
+  color:black;
  }
 
 .horizontal-div2 {
-   /* display: flex;  */
-  /* align-items:center;  */
   margin-bottom: 30px;
   padding:60px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  
+  color:black;
 }
 ul{
 list-style-type: none;
@@ -73,7 +71,7 @@ list-style-type: none;
   position: relative;
   top: 0;
   left: 20px; 
-  color: rgb(246, 23, 60);
+  color:var(--secondary-text-color);
   padding:30px;  
  }   
 li {
@@ -84,12 +82,12 @@ li {
 .seller-info p {
   margin-left: 20px;
 }
-/* Placeholder map styles */
 .map {
 
   border-color: grey;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding:40px;
+  color:black;
 }
 
 /* Right side styles */
@@ -101,30 +99,39 @@ li {
 }
 
 /* Vertical div styles */
-.vertical-div {
+.vertical-div  {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   align-items: center;
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding:20px;
+  color:black;
 }
-
-/* Additional styles for icons and list items */
-.icon {
-  margin-right: 5px;
+.seller-info{
+  margin-right:30px ;
 }
+.vertical-div-text{
+  margin-left:-85%;
+}
+/* Additional styles for icons and list items */ */
+ .icon{
+  margin-right:25px; 
+}
+ /* .fas fa-user{
+  margin-left:55px ;
+}  */
 
 .underline {
   border-bottom: 2px solid;
   padding-bottom: 5px;
   width: fit-content;
-  border-color: #ff69b4;
+  border-color:var(--secondary-text-color);
 }
 
-  .pink {
+  /* .pink {
   border-color: #ff69b4;
- } 
+ }  */
 
 .grey {
   border-color: rgb(238, 233, 233);
@@ -135,12 +142,7 @@ li {
     display: flex;
     flex-direction: column; 
   } 
-  .vertical-div .fas fa-user {
-    position: relative;
-    top: 0;
-    left: -20px;
-  }
- .vertical-div{
+  .vertical-div{
   padding:35%;
   align-items: center;
   text-align: center;
@@ -158,10 +160,6 @@ li {
   width:100%;
     
  }
- /* .horizontal-div1 p{
-      margin-left: 10px;
-  } */
- 
  .map{
   padding:35%; 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -179,24 +177,7 @@ li {
   margin: 0;
   padding: 0;
 }
- 
- 
-  /* li {
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }  */
-   /* .horizontal-div1 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10%;
-  }
-  
-  .horizontal-div1 .icon {
-    margin-right: 10px;
-  /* }* */
-  
-  .horizontal-div1 span {
+.horizontal-div1 span {
     margin-right: 10px;
   }
      
@@ -204,7 +185,7 @@ li {
     position: relative;
     top: 0;
     left: 10px; 
-    color: rgb(246, 23, 60);
+    color:var(--secondary-text-color);
     padding:20px;  
    }   
   li {
@@ -213,4 +194,3 @@ li {
     padding: 2px;
   }
 }
- 

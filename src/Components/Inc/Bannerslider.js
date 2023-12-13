@@ -59,6 +59,9 @@ const Bannerslider = () => {
           slidesToShow: 1,
           slidesToScroll: 2,
           initialSlide: 2,
+          infinite: true,
+          dots: true,
+          arrows: true
         },
       },
       {
@@ -66,6 +69,9 @@ const Bannerslider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: true
         },
       },
     ],

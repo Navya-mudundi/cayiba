@@ -1,5 +1,5 @@
 import React from "react";
-import "./SamplePrevArrow.css";
+// import "./SamplePrevArrow.css";
 
 const SamplePrevArrow = (props) => {
   const { className, style, onClick } = props;
@@ -8,8 +8,8 @@ const SamplePrevArrow = (props) => {
       className={className}
       style={{
         ...style,
-        display: "block",
-        background: "red",
+        // display: "block",
+        // background: "red",
         width: "4vw",
         height: "4vw",
         background: "#333",

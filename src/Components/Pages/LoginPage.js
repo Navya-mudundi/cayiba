@@ -8,11 +8,19 @@ const LoginPage = () => {
     mobile: "",
     password: "",
   });
+  
   // State to store form validation errors
   const [errors, setErrors] = useState({
     mobile: "",
     password: "",
   });
+  const [LoginSuccess, setLoginSuccess] = useState(null);
+  const captureFormData = () => {
+    console.log("Form Data:", formData);
+      setTimeout(()=>{
+      setLoginSuccess(true);
+    },2000);
+  };
   // Handle form field changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -43,8 +51,10 @@ const LoginPage = () => {
     // If any validation errors, update state and stop submission
     if (!valid) {
       setErrors(newErrors);
+      setLoginSuccess(false)
       return;
     }
+    captureFormData();
   };
   return (
     <Container className="mt-5">
@@ -92,6 +102,12 @@ const LoginPage = () => {
           New to Cayiba? <a href="/register">Register</a>
         </p>
       </div>
+      {LoginSuccess === true && (
+        <div className="text-success mt-3">Login successful!</div>
+      )}
+      {LoginSuccess === false && (
+        <div className="text-danger mt-3">Login failed. Please try again.</div>
+      )}
     </Container>
   );
 };

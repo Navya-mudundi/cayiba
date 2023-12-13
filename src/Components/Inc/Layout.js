@@ -1,15 +1,15 @@
 import React from "react";
 import StickyNavbar from "./StickyNavbar";
-import Bannerslider from "./Bannerslider";
+// import ProductDetails from "../Pages/ProductDetails";
 // import Footer from "./Footer";
-
 
 const Layout = ({children}) => {
   return (
     <div className="app">
       <StickyNavbar /> 
-      <Bannerslider/>
-      {children} 
+      
+       {children} 
+      {/* <ProductDetails /> */} 
       {/* <Footer /> */}
     </div>
   );

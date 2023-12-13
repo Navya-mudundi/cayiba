@@ -1,0 +1,217 @@
+/* *, */
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: #ffffff;
+    flex-grow: 1;
+}
+
+.Wrapper {
+    margin: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.Card {
+    display: block;
+    position: relative;
+    background-color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    color:black;
+    /* border-right: 1px solid #333e48; */
+
+    &:hover {
+        /* transition: all 0.2s ease-out; */
+        border: 1px solid #cccccc;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        z-index: 500;
+    }
+}
+
+.Card:hover .Card-btn{
+
+    /* .Card-body {color: yellow;} */
+    .Card-btn {
+        border-top: 1px solid yellow;
+    }
+}
+
+.Card-img {
+    width: 16rem;
+    height: 11rem;
+    object-fit: cover;
+}
+
+.Card-body {
+    margin: 1rem;
+}
+
+.Card-title {
+    line-height: 1.2rem;
+}
+
+.Card-price {
+    line-height: 1.4rem;
+    margin-top: 0.6rem;
+}
+
+.Card-price::before {
+    content: "$";
+    font-size: 1rem;
+    position: relative;
+    top: -0.3rem;
+    padding-right: 0.1rem;
+}
+
+.Card-btn {
+    border: none;
+    border-top: 1px solid #2E3841;
+    background-color: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    color: inherit;
+    width: 100%;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .Wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Card {
+        display: block;
+        position: relative;
+        background-color: white;
+        border-radius: 4px;
+        text-decoration: none;
+        overflow: hidden;
+        border: 1px solid #333e48;
+
+        &:hover {
+            /* transition: all 0.2s ease-out; */
+            border: 1px solid #cccccc;
+            box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+            z-index: 500;
+        }
+    }
+
+    .Card:hover  .Card-btn {
+            border-top: 1px solid yellow;
+        }
+    
+    .Card-img {
+        width: 16rem;
+        height: 11rem;
+        object-fit: cover;
+        /* position: absolute; */
+    }
+
+    .Card-body {
+        margin: 0.5rem;
+    }
+
+    .Card-title {
+        line-height: 1rem;
+    }
+
+    .Card-price {
+        line-height: 0.5rem;
+        margin-top: 0.3rem;
+    }
+
+    .Card-btn {
+        margin-top: 0.5rem;
+        padding-top: 0.4rem;
+    }
+}
+
+@media screen and (min-width:428px) 
+ {
+    .Wrapper {
+        margin: 4rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .Card {
+        display: block;
+        position: relative;
+        background-color: white;
+        border-radius: 4px;
+        text-decoration: none;
+        overflow: hidden;
+        border: 1px solid #333e48;
+
+        &:hover {
+            /* transition: all 0.2s ease-out; */
+            border: 1px solid #cccccc;
+            box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+            z-index: 500;
+        }
+    }
+
+    .Card:hover .Card-btn {
+            border-top: 1px solid yellow;
+        }
+
+
+    .Card-img {
+        width: 14rem;
+        height: 10rem;
+        object-fit: cover;
+    }
+
+    .Card-body {
+        margin: 1rem;
+    }
+}
+
+/* @media screen and (min-width:1025px) and (max-width:2606px) {
+    .Wrapper {
+        margin: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .Card {
+        display: block;
+        position: relative;
+        background-color: white;
+        border-radius: 4px;
+        text-decoration: none;
+        overflow: hidden;
+        border: 1px solid #333e48;
+
+        &:hover {
+            /* transition: all 0.2s ease-out; */
+            /* border: 1px solid #cccccc; */
+            /* box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+            z-index: 500; */
+        /* }
+    }
+
+    .Card:hover {
+
+        /* .Card-body {color: yellow;} */
+        /* .Card-btn {
+            border-top: 1px solid yellow;
+        }
+    } */
+
+    /* .Card-img {
+        width: 17rem;
+        height: 11rem;
+        object-fit: cover;
+    }
+}   */

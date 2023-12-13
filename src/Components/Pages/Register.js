@@ -25,6 +25,8 @@ const RegisterPage = () => {
   const employeeReferenceOptions = ["Option 1", "Option 2", "Option 3"];
   const captureFormData = () => {
     console.log("Form Data:", formData);
+    // setCapturedFormData(formData);
+
     setTimeout(() => {
       setRegistrationSuccess(true);
     }, 2000);

@@ -98,12 +98,15 @@ const ProductDetails = () => {
       <div className="content-container">
         <div className="left-side">
           <div className="horizontal-div1">
-            <h3>All Night Drugstore</h3>
-            <div className="icon">
-              <i className="fas fa-map-marker-alt"></i></div>
-              <span style={{ margintop: "10px"}}>Italian</span>
-           </div>
+             <h3>All Night Drugstore
 
+             </h3>
+               <div className="icon" >
+                 <i className="fas fa-map-marker-alt" style={{ marginTop: "10px"}}></i>
+               </div>
+                <span style={{ marginLeft:"40px", marginTop:"10px"}}>Italian</span>
+          </div>
+         
           <div className="horizontal-div2">
           <h4 className="underline pink">Preview</h4>
           <span>Loincloth</span>
@@ -115,12 +118,14 @@ const ProductDetails = () => {
         </div>
 
         <div className="right-side">
-          <div className="vertical-div">
+          <div className="vertical-div seller-info">
             <div className="icon">
              <i className="fas fa-user"></i></div> 
+             <div>
                 <h3 className="underline grey">Seller Information</h3> 
                 
-            <span >Italian</span>
+                <span className='vertical-div-text'>Italian</span>
+            </div>
             <ul>
               <li>
                 <div className="icon">

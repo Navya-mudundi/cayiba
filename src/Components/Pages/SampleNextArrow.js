@@ -7,13 +7,13 @@ const SampleNextArrow = (props) => {
       className={className}
       style={{
         ...style,
-        display: "block",
-        background: "green",
+        // display: "block",
+        // background: "green",
         width: "4vw",
         height: "4vw",
         background: "#333",
         borderRadius: "50%",
-        display: "flex",
+         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         cursor: "pointer",
