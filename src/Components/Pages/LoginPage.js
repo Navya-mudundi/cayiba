@@ -3,13 +3,11 @@ import { Container, Form, Button } from "react-bootstrap";
 import "../Pages/LoginPage.css";
 
 const LoginPage = () => {
-  // State to store form field values
   const [formData, setFormData] = useState({
     mobile: "",
     password: "",
   });
-  
-  // State to store form validation errors
+
   const [errors, setErrors] = useState({
     mobile: "",
     password: "",
@@ -17,9 +15,9 @@ const LoginPage = () => {
   const [LoginSuccess, setLoginSuccess] = useState(null);
   const captureFormData = () => {
     console.log("Form Data:", formData);
-      setTimeout(()=>{
+    setTimeout(() => {
       setLoginSuccess(true);
-    },2000);
+    }, 2000);
   };
   // Handle form field changes
   const handleInputChange = (e) => {
@@ -51,7 +49,7 @@ const LoginPage = () => {
     // If any validation errors, update state and stop submission
     if (!valid) {
       setErrors(newErrors);
-      setLoginSuccess(false)
+      setLoginSuccess(false);
       return;
     }
     captureFormData();
@@ -75,8 +73,9 @@ const LoginPage = () => {
             value={formData.mobile}
             onChange={handleInputChange}
             required
-            style={{ maxWidth: "400px" }}/>
-           {errors.mobile && <div className="text-danger">{errors.mobile}</div>}
+            style={{ maxWidth: "400px" }}
+          />
+          {errors.mobile && <div className="text-danger">{errors.mobile}</div>}
         </Form.Group>
         <Form.Group controlId="password">
           <Form.Label>Password</Form.Label>
@@ -87,7 +86,8 @@ const LoginPage = () => {
             value={formData.password}
             onChange={handleInputChange}
             required
-            style={{ maxWidth: "400px" }}/>
+            style={{ maxWidth: "400px" }}
+          />
           {errors.password && (
             <div className="text-danger">{errors.password}</div>
           )}

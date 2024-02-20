@@ -20,7 +20,6 @@ const StickyNavbar = () => {
       expand="lg"
       className="justify-content-between align-items-center"
     >
-      
       <Navbar.Brand href="#home">
         <img
           src="https://www.cayiba.com/resources/images/cayiba_logo2.png"
@@ -29,14 +28,14 @@ const StickyNavbar = () => {
           className="d-inline-block align-top"
           alt="Logo"
         />
-        </Navbar.Brand>
-        <Nav className="d-flex flex-row-reverse flex-lg-row">
-          <Nav.Link as={Link} to="/Sell">
-            <Button variant="warning" className="d-sm-none ">
-              Sell
-            </Button>
-          </Nav.Link>
-        </Nav>
+      </Navbar.Brand>
+      <Nav className="d-flex flex-row-reverse flex-lg-row">
+        <Nav.Link as={Link} to="/Sell">
+          <Button variant="warning" className="d-sm-none ">
+            Sell
+          </Button>
+        </Nav.Link>
+      </Nav>
       {/* </Navbar.Brand> */}
       <Navbar.Toggle aria-controls="navbar-nav" />
       <Navbar.Collapse id="navbar-nav">
@@ -44,18 +43,18 @@ const StickyNavbar = () => {
           <Nav.Link as={Link} to="/home">
             Home
           </Nav.Link>
-             <NavDropdown title="Categories" id="categories-dropdown">
+          <NavDropdown title="Categories" id="categories-dropdown">
             {/* <NavDropdown.Item href="#action/3.1">Category 1</NavDropdown.Item> */}
-             <NavDropdown.Item as={Link} to="/category_1">
+            <NavDropdown.Item as={Link} to="/category_1">
               Category_1
-             </NavDropdown.Item>
-             <NavDropdown.Item href="#action/3.2">Category_2</NavDropdown.Item>
-          </NavDropdown>    
-           <Nav>
-          {/* <Nav.Link as={Link} to="/category">
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">Category_2</NavDropdown.Item>
+          </NavDropdown>
+          <Nav>
+            {/* <Nav.Link as={Link} to="/category">
             category 
           </Nav.Link>  */}
-         </Nav>  
+          </Nav>
         </Nav>
         <Form inline className="d-none d-lg-flex">
           <FormControl

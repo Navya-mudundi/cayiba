@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@200&family=Montserrat:wght@100;300&family=Roboto:wght@100&display=swap");
 
 :root {
-  --primary-color:rgb(255, 204, 0);
+  --primary-color: rgb(255, 204, 0);
   --secondary-color: #ffffff;
   --neutral-color: #111111;
 
@@ -35,7 +35,7 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
   border: 2px solid var(--primary-color);
@@ -45,7 +45,7 @@
   border-radius: 0px;
   border-top-left-radius: 18px;
   border-bottom-left-radius: 18px;
-  border-color:var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 @media screen and (max-width: 480px) {
@@ -55,7 +55,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
     border: 2px solid var(--primary-color);
@@ -65,7 +65,7 @@
     border-radius: 0px;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
-    border-color:var(--primary-color);
+    border-color: var(--primary-color);
   }
 }
 @media screen and (min-width: 768px) {
@@ -75,7 +75,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
     border: 2px solid var(--primary-color);
@@ -85,6 +85,6 @@
     border-radius: 0px;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
-    border-color:var(--primary-color);
+    border-color: var(--primary-color);
   }
 }

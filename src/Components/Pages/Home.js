@@ -14,8 +14,8 @@ function Home() {
       <Productcard/>
       <Productcard/> 
       <Productcard/> 
-      <Productcard/>    *
-       {/* <Footer/>   */}
+      <Productcard/>    
+       {/* <Footer/>    */}
     </div>
   );
 }

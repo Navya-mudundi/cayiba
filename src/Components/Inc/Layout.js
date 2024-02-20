@@ -3,13 +3,13 @@ import StickyNavbar from "./StickyNavbar";
 // import ProductDetails from "../Pages/ProductDetails";
 // import Footer from "./Footer";
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <div className="app">
-      <StickyNavbar /> 
-      
-       {children} 
-      {/* <ProductDetails /> */} 
+      <StickyNavbar />
+
+      {children}
+      {/* <ProductDetails /> */}
       {/* <Footer /> */}
     </div>
   );

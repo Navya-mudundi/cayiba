@@ -69,7 +69,7 @@ const ProductDetails = () => {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },
@@ -89,7 +89,7 @@ const ProductDetails = () => {
         <Slider className='bannerslider' {...settings}>
           {data.map((item) => (
             <div className='imgcontainer' key={item.id}>
-              <img src={item.image} width='100%' height='100%' alt='noimg' />
+              <img src={item.image}  alt='noimg' />
             </div>
           ))}
         </Slider>
@@ -101,10 +101,12 @@ const ProductDetails = () => {
              <h3>All Night Drugstore
 
              </h3>
+             <div className='flexbox2'>
                <div className="icon" >
-                 <i className="fas fa-map-marker-alt" style={{ marginTop: "10px"}}></i>
+                 <i className="fas fa-map-marker-alt" ></i>
                </div>
-                <span style={{ marginLeft:"40px", marginTop:"10px"}}>Italian</span>
+                <span >Italian</span>
+                </div>
           </div>
          
           <div className="horizontal-div2">
@@ -119,19 +121,23 @@ const ProductDetails = () => {
 
         <div className="right-side">
           <div className="vertical-div seller-info">
+            <div class="flexbox">
+
+
             <div className="icon">
              <i className="fas fa-user"></i></div> 
              <div>
-                <h3 className="underline grey">Seller Information</h3> 
+                <h3 className="underline grey">Seller Information</h3>
+                </div> 
                 
                 <span className='vertical-div-text'>Italian</span>
             </div>
             <ul>
               <li>
                 <div className="icon">
-                  <i className="fas fa-map-marker-alt"></i>
-                <span>CFA 8000</span></div>
-              </li>
+                   <i className="fas fa-map-marker-alt"></i>
+                   <span>CFA 8000</span></div>
+               </li>
               <li>
                 <div className="icon">
                   <i className="fas fa-map-marker-alt"></i>
@@ -140,7 +146,7 @@ const ProductDetails = () => {
               <li>
                 <div className="icon">
                   <i className="fas fa-map-marker-alt"></i>
-                  <span>Location Abengourou,Italian Loincloth</span></div>
+                  <span >Location Abengourou,Italian Loincloth</span></div>
               </li>
               <li>
                 <div className="icon">
@@ -157,7 +163,7 @@ const ProductDetails = () => {
                   <i className="fas fa-phone"></i>
                   <span>0554886830</span></div>
               </li>
-              <li>
+              <li >
                 <div className="icon">
                   <i className="fas fa-envelope"></i>
                   <span>angelsalva202@gmail.com</span> </div>

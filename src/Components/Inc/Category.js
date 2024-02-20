@@ -49,9 +49,13 @@ function Category() {
 function Card(props) {
   return (
     <div className="Card">
-      <a href="/productDetails">
+      <a href="/productDetails"className="Card1">
       <img src={props.img} alt={props.title} className="Card-img" />
      </a>
+     <div class="card-top1">
+      <p>FEATURED</p>
+     </div>
+
       <div className="Card-body">
         <h2 className="Card-title">{props.title}</h2>
         <p className="Card-description">{props.description}</p>

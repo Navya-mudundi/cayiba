@@ -3,7 +3,6 @@ import { Container, Form, Button } from "react-bootstrap";
 import "../Pages/Register.css";
 
 const RegisterPage = () => {
-  // State to store form field values
   const [formData, setFormData] = useState({
     employeeReference: "",
     name: "",
@@ -12,7 +11,6 @@ const RegisterPage = () => {
     password: "",
     confirmPassword: "",
   });
-  // State to store form validation errors
   const [errors, setErrors] = useState({
     employeeReference: "",
     name: "",
@@ -44,7 +42,6 @@ const RegisterPage = () => {
       [name]: "",
     });
   };
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform validation
@@ -200,8 +197,7 @@ const RegisterPage = () => {
           Already have an account? <a href="/login">Login</a>
         </p>
       </div>
-      {/* </Col>
-      </Row> */}
+      
        {registrationSuccess === true && (
         <div className="text-success mt-3">Registration successful!</div>
       )}

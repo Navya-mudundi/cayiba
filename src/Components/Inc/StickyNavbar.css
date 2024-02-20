@@ -3,7 +3,7 @@
 
 :root {
   /* --primary-color: #f8ebb6; */
-  --primary-color:rgb(255, 204, 0);
+  --primary-color: rgb(255, 204, 0);
   --secondary-color: #ffffff;
   --neutral-color: #111111;
 
@@ -33,7 +33,7 @@
   /* background-color: var(--primary-color); */
   color: var(--primary-text-color-400);
 }
-@media (max-width:480) {
+@media (max-width: 480) {
   :root {
     --fs-400: 0.875rem;
     --fs-600: 0.937rem;
@@ -58,8 +58,6 @@
   .navbar .btn-sell {
     margin-right: 20px;
   }
-
-
 }
 /* Add styles for screens larger than 767px */
 @media (min-width: 768) {

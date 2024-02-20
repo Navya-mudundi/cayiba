@@ -24,26 +24,22 @@
     border-top: 4px solid var(--primary-color);
     text-decoration: none;
   }
-  .custom-button-Register{
-    color:var(--neutral-color);
+  .custom-button-Register {
+    color: var(--neutral-color);
     border-radius: 18px;
   }
-  .custom-button-Register:hover{
-    background-color:var(--hover-color);
+  .custom-button-Register:hover {
+    background-color: var(--hover-color);
   }
 }
 @media screen and (min-width: 768px) {
   .custom-button-Register {
-    color:var(--neutral-color);
+    color: var(--neutral-color);
     border-radius: 18px;
     padding: 15px;
     width: 150px;
   }
-  .custom-button-Register:hover{
-    background-color:var(--hover-color);
+  .custom-button-Register:hover {
+    background-color: var(--hover-color);
   }
-} 
-
-  
- 
-  
+}

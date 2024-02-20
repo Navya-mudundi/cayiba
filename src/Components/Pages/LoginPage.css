@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@200&family=Montserrat:wght@100;300&family=Roboto:wght@100&display=swap");
 
 :root {
-  --primary-color:rgb(255, 204, 0);
+  --primary-color: rgb(255, 204, 0);
   --secondary-color: #ffffff;
   --neutral-color: #111111;
-  --hover-color:grey;
+  --hover-color: grey;
 
   --primary-text-color-600: #111111;
   --primary-text-color-400: #444444;
@@ -50,22 +50,22 @@
 }
 @media screen and (max-width: 480px) {
   .custom-button {
-    color:var(--neutral-color);
+    color: var(--neutral-color);
     border-radius: 18px;
   }
-  .custom-button:hover{
-    background-color:var(--hover-color);
+  .custom-button:hover {
+    background-color: var(--hover-color);
   }
 }
 
 @media screen and (min-width: 768px) {
   .custom-button {
-    color:var(--neutral-color);
+    color: var(--neutral-color);
     border-radius: 18px;
     padding: 15px;
     width: 150px;
   }
-  .custom-button:hover{
+  .custom-button:hover {
     background-color: var(--hover-color);
   }
 }

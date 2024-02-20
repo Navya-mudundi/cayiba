@@ -10,8 +10,7 @@
   font: inherit;
 }
 
-@media screen and (min-width:1023px) and (max-width:2600px) {
-
+@media screen and (min-width: 1023px) and (max-width: 2600px) {
   /* Shop Sidebar Styles */
   .shop-sidebar {
     font-size: 18px;
@@ -20,7 +19,7 @@
     margin-right: 50px;
     height: 445px;
     width: 270px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 17px 0 9px 0;
     border: 2px solid #dddddd;
     border-radius: 10px;

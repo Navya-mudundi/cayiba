@@ -10,15 +10,7 @@ import Category from './Category';
 function Category_1() {
   return (
     <div>
-      <StickyNavbar />
-      {/* <Bannerslider />  */}
-      {/* <Arrows/> */}
-      {/* <Productcard/> 
-      <Productcard/> 
-      <Productcard/> 
-      <Productcard/>  */}
-      {/* <Footer/> */} 
-      {/* <ProductDetails /> */}
+      <StickyNavbar />     
       <ShopSidebar />
       <Category />
     </div>

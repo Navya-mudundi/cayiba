@@ -12,7 +12,7 @@ function Arrows() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 3,
     initialSlide: 0,
     arrows: true,
@@ -22,16 +22,16 @@ function Arrows() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
+          slidesToShow: 5,
+          slidesToScroll: 4,
           infinite: true,
           Arrows: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -39,7 +39,7 @@ function Arrows() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -54,7 +54,7 @@ function Arrows() {
     }));
   };
   return (
-    <div className="app">
+    <div className="app1">
       <div className="app-slider-text">
         <h3 className={window.innerWidth <= 480 ? "mobile-h3" : "desktop-h3"}>
           POPULAR CATEGORIES
@@ -86,7 +86,7 @@ function Arrows() {
                 onError={handleErrorImage}
               />
             </div>
-            <h4 className="text-center">{item.title}</h4>
+            <h6 className="text-center">{item.title}</h6>
           </div>
         ))}
       </Slider>
