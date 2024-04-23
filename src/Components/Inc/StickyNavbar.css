@@ -59,7 +59,6 @@
     margin-right: 20px;
   }
 }
-/* Add styles for screens larger than 767px */
 @media (min-width: 768) {
   .navbar-brand img {
     width: 100px;
@@ -73,9 +72,11 @@
   }
   .navbar .btn-sell {
     margin-right: 10px;
+    
   }
   .custom-sell-button {
     margin-right: 50px;
     padding-left: 30%;
   }
+  
 }

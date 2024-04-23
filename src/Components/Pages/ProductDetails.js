@@ -85,10 +85,10 @@ const ProductDetails = () => {
 
   return (
     <div>
-      <div className='bannerslider'>
-        <Slider className='bannerslider' {...settings}>
+      <div className='banner'>
+        <Slider className='banner' {...settings}>
           {data.map((item) => (
-            <div className='imgcontainer' key={item.id}>
+            <div className='imgcontainer1' key={item.id}>
               <img src={item.image}  alt='noimg' />
             </div>
           ))}

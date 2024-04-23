@@ -29,14 +29,15 @@ const StickyNavbar = () => {
           alt="Logo"
         />
       </Navbar.Brand>
-      <Nav className="d-flex flex-row-reverse flex-lg-row">
+       {/* <Nav className="d-flex flex-row-reverse flex-lg-row">  */}
+      {/* <Nav className="mr-auto d-none d-lg-block"> 
         <Nav.Link as={Link} to="/Sell">
           <Button variant="warning" className="d-sm-none ">
             Sell
           </Button>
         </Nav.Link>
-      </Nav>
-      {/* </Navbar.Brand> */}
+      </Nav> */}
+       {/* </Navbar.Brand>  */}
       <Navbar.Toggle aria-controls="navbar-nav" />
       <Navbar.Collapse id="navbar-nav">
         <Nav className="ml-auto">
@@ -51,10 +52,7 @@ const StickyNavbar = () => {
             <NavDropdown.Item href="#action/3.2">Category_2</NavDropdown.Item>
           </NavDropdown>
           <Nav>
-            {/* <Nav.Link as={Link} to="/category">
-            category 
-          </Nav.Link>  */}
-          </Nav>
+        </Nav>
         </Nav>
         <Form inline className="d-none d-lg-flex">
           <FormControl
@@ -83,14 +81,21 @@ const StickyNavbar = () => {
             Login
           </Nav.Link>
         </Nav>
-        <Nav>
+        {/* <Nav>
           <Nav.Link as={Link} to="/Sell">
             <Button variant="warning" size="lg" className="d-none d-md-block ">
               Sell
             </Button>
           </Nav.Link>
-        </Nav>
+        </Nav>  */}
       </Navbar.Collapse>
+      <Nav className="ml-auto">
+        <Nav.Link as={Link} to="/Sell">
+          <Button variant="warning">
+            Sell
+          </Button>
+        </Nav.Link>
+      </Nav>
     </Navbar>
   );
 };

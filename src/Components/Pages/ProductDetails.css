@@ -54,8 +54,10 @@ content-container {
   align-items: center;
 }
 .horizontal-div1 {
+  margin-top: 10px;
   margin-bottom: 10%;
   color: black;
+ 
 }
 
 .horizontal-div2 {
@@ -100,7 +102,7 @@ li {
 .flexbox {
   display: flex;
   align-items: center;
-  padding-right: 5px;
+   padding-right: 55px;
 }
 /* Vertical div styles */
 .vertical-div {
@@ -120,7 +122,6 @@ li {
   padding-top: 105px;
   padding-left: 15%;
 }
-
 .icon {
   margin-right: 25px;
 }
@@ -133,24 +134,32 @@ li {
 .grey {
   border-color: rgb(238, 233, 233);
 }
-.imgcontainer {
+.imgcontainer1 {
   font-size: xx-small;
+  
 }
 
 @media (max-width: 768px) {
-  .imgcontainer {
-    margin-right: 10px;
+  .imgcontainer1 {
+      margin: 10px;  
+      
+    
   }
   .content-container {
     display: flex;
     flex-direction: column;
+   
   }
-
   .right-side {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 30px auto;
+    align-items: center; 
+    
+    width:100%; 
+    padding: 50%;
+    padding-top: 5px;
+    margin-left: 10px; 
+ 
   }
   .flexbox {
     display: flex;
@@ -165,13 +174,13 @@ li {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding-top: 5px;
     margin-left: 10px;
-    width: 100%;
+    /* width: 100%; */
   }
   .map {
     padding: 35%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding-top: 5px;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .horizontal-div1 span {
